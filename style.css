@@ -1,0 +1,45 @@
+body{
+    background-color: #2e2e2e;
+    color: rgb(201, 201, 201);
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    place-items: center;
+
+
+}
+#clock{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    
+    -moz-transform: rotate(180deg) scale(-1, 1);
+    -webkit-transform:rotate(180deg) scale(-1, 1);
+    -o-transform: rotate(180deg) scale(-1, 1);
+    -ms-transform: rotate(180deg) scale(-1, 1);
+    transform: rotate(180deg) scale(-1, 1);
+}
+.time{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tick{
+    margin: 1rem;
+    
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    
+}
+.on{
+    background-color: rgb(47, 79, 165);
+    border: 1px solid #ccc;
+}
+.off{ 
+    border: 1px solid #ccc;
+}
